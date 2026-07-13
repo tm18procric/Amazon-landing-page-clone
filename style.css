@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eaeded;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== HEADER / NAV 1 ===== */
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    color: #fff;
+    padding: 8px 10px;
+    gap: 10px;
+}
+
+.nav-logo img {
+    width: 100px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+/* Deliver To */
+.box2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.box2:hover {
+    border: 1px solid #fff;
+}
+
+.box2 .line1 {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.box2 .line2 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Search bar */
+.box3 {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.allbox select {
+    height: 100%;
+    padding: 0 6px;
+    background-color: #f3f3f3;
+    border: none;
+    border-right: 1px solid #ccc;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.inputbox {
+    flex: 1;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search {
+    width: 45px;
+    background-color: #febd69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: #f3a847;
+}
+
+.search i {
+    color: #131921;
+    font-size: 18px;
+}
+
+/* Language box */
+.box4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.box4:hover {
+    border: 1px solid #fff;
+}
+
+.box4 .flag img {
+    width: 20px;
+}
+
+.box4 select {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.box4 select option {
+    color: #000;
+}
+
+/* Account & Lists */
+.box5 {
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.box5:hover {
+    border: 1px solid #fff;
+}
+
+.box5 .Hello {
+    font-size: 12px;
+}
+
+.Accountlists {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -60px;
+    top: 35px;
+    background-color: #fff;
+    color: #000;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .top {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.dropdown-content .top button {
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    padding: 8px 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown-content .lr {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+.dropdown-content .left,
+.dropdown-content .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdown-content h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.dropdown-content a {
+    font-size: 13px;
+    color: #0066c0;
+}
+
+.dropdown-content a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Cart */
+.box6 {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box6:hover {
+    border: 1px solid #fff;
+}
+
+.box6 i {
+    font-size: 26px;
+}
+
+/* ===== NAV 2 ===== */
+.nav2 {
+    display: flex;
+    align-items: center;
+    background-color: #232f3e;
+    color: #fff;
+    padding: 8px 10px;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.boxa {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menuicon i {
+    font-size: 16px;
+}
+
+.boxb {
+    flex: 1;
+}
+
+.lists {
+    display: flex;
+    gap: 20px;
+}
+
+.lists p {
+    cursor: pointer;
+}
+
+.lists p:hover {
+    text-decoration: underline;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to bottom, #232f3e 0%, #232f3e 40%, #eaeded 100%);
+}
+
+.hero-msg {
+    background-color: #fff;
+    text-align: center;
+    padding: 12px 20px;
+   
+margin-bottom: -394px;
+  margin-top: 206px;
+    max-width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    position: relative;
+    z-index: 5;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.hero-msg a {
+    color: #007185;
+    font-weight: bold;
+      margin-right: 100px;
+}
+
+.hero-msg a:hover {
+    text-decoration: underline;
+    color: #c45500;
+}
+.hero-section img{
+    width: 100vw;
+}
+.hero-section img{
+    width: 100%;
+    display: block;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+/* ===== PRODUCTS CARDS ===== */
+.products-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 0 15px 30px;
+    margin-top: 400px;
+    margin-left:100px ;
+    margin-right: 100px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.imgbox h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.opar-img,
+.opar-img2 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.opar-img .box11,
+.opar-img .box22,
+.opar-img2 .box33,
+.opar-img2 .box44 {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.opar-img img,
+.opar-img2 img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.opar-img p,
+.opar-img2 p {
+    font-size: 13px;
+    color: #007185;
+    margin-top: 6px;
+}
+
+.opar-img .box11:hover p,
+.opar-img .box22:hover p,
+.opar-img2 .box33:hover p,
+.opar-img2 .box44:hover p {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.see {
+    color: #007185;
+    font-size: 13px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.see:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #232f3e;
+    color: #ddd;
+    margin-top: 30px;
+}
+
+.footpanel-1 {
+    background-color: #37475a;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.footpanel-1:hover {
+    background-color: #485769;
+}
+
+.footpanel-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footpanel-2 p {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footpanel-2 ul li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footpanel-2 ul li:hover {
+    text-decoration: underline;
+}
+
+.footpanel-3 {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #3a4553;
+}
+
+.footpanel-3 img {
+    width: 100px;
+}
+
+.footpanel-4 {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    background-color: #131a22;
+}
+
+.footpanel-4 p {
+    margin-bottom: 6px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .box3 {
+        order: 3;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .lists {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
